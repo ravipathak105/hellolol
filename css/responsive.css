@@ -1,0 +1,198 @@
+/* Responsive styles
+================================================== */
+/* Large Devices, Wide Screens */
+@media (min-width: 1200px) {
+  /* Dropdown animation */
+  .navbar-nav .dropdown-menu,
+  .navbar-nav .dropdown.megamenu div.dropdown-menu {
+    background: none;
+    border: 0;
+    box-shadow: none;
+    display: block;
+    opacity: 0;
+    z-index: 1;
+    visibility: hidden;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+    -webkit-transition: visibility 500ms, opacity 500ms, -webkit-transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+    -moz-transition: visibility 500ms, opacity 500ms, -moz-transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+    -o-transition: visibility 500ms, opacity 500ms, -o-transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+    -ms-transition: visibility 500ms, opacity 500ms, -ms-transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+    transition: visibility 500ms, opacity 500ms, transform 500ms cubic-bezier(0.43, 0.26, 0.11, 0.99);
+  }
+  .navbar-nav .dropdown:hover div.dropdown-menu,
+  .navbar-nav .dropdown.megamenu:hover div.dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    color: #777;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  .navbar-nav .dropdown-backdrop {
+    visibility: hidden;
+  }
+  .dropdown-menu > ul{margin-top: 15px;}
+}
+
+
+/*@media only screen and (max-width: 1024px) {
+  #hero-area{
+        background-size: auto;
+  }
+}
+*/
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+@media only screen and (max-width: 767px) {
+
+  .title {
+    font-size: 30px;
+  }
+  .navbar-header .navbar-brand a {
+    padding: 0px 8px;
+  }
+  #hero-area {
+    padding: 140px 0;
+  }
+  #hero-area .btn {
+    margin-top: 8px;
+  }
+  #about {
+    padding: 30px 0;
+  }
+  #about .block {
+    padding: 0;
+  }
+/*  figure .buttons {
+    left: 16%;
+  }*/
+
+  #feature .media {
+    margin: 0px 0px 35px;
+  }
+  #footer .copyright {
+    text-align: center;
+  }
+  #footer .social {
+    text-align: center;
+  }
+  .dropdown-menu > ul > li > a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding: 15px;
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .dropdown-menu > ul {
+    list-style: none;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: -5px;
+    background: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 0.09px rgba(0, 0, 0, 0.15);
+  }
+  .navbar-collapse {
+    background: #333333;
+  }
+  #top-bar .main-menu li > a {
+    color: #fff;
+    padding: 10px 10px;
+    background: transparent;
+  }
+  #top-bar .dropdown-menu > ul {
+    list-style: none;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: -5px;
+    background: #fff;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 0.09px rgba(0, 0, 0, 0.15);
+  }
+  #top-bar .dropdown-menu > ul > li > a {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    padding: 15px;
+    color: #333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+.global-page-header {
+  padding: 91px 0 0px 0;
+}
+
+}
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (max-width: 490px) {
+  .nav-tabs>li {
+    float: none;
+    padding: 0px 0px 8px 0px;
+}
+.global-page-header h2{font-size: 30px;}
+}
+@media only screen and (max-width: 380px) {
+  .navbar-brand img{max-width: 245px;}
+  .global-page-header {
+  padding: 140px 0 0px 0;
+}
+}
+
+@media (max-width:1024px ){
+  #hero-area{background-attachment: unset;background-position: left center;}
+}
+
+@media (min-width:992px) and (max-width:1200px){
+  #top-bar .main-menu li a{padding:10px 10px;}
+  .navbar-right{margin-top: 6px;}
+}
+
+@media (min-width:768px) and (max-width:992px){
+  .navbar-header{width:100%;}
+  .navbar-brand{    float: none;
+    text-align: center;}
+  #top-bar .navbar-collapse{width:100%;text-align: center;float:none !important;}
+  #top-bar .navbar-collapse .main-menu{    display:inline-block;text-align: center;margin: auto;}
+  #hero-area .block{max-width: 430px;}
+  #about{text-align: center;}
+  #about img{display:inherit;margin: auto;width:350px;}
+  #hero-area{padding-top:182px;padding-bottom:100px;}
+  .global-page-header {padding: 145px 0 0px 0;}
+  .works  .nav-tabs>li>a{padding:10px 15px;}
+  .navbar-right{    float: none !important;margin-right: 0px;}
+  #hero-area h2{margin-bottom: 0px;}
+}   
